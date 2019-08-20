@@ -10,7 +10,7 @@ using namespace Concurrency;
 // The DirectX 12 Application template is documented at https://go.microsoft.com/fwlink/?LinkID=613670&clcid=0x409
 
 // Loads and initializes application assets when the application is loaded.
-ExampleMain::ExampleMain()
+TcGame::ExampleMain()
 {
 	// TODO: Change the timer settings if you want something other than the default variable timestep mode.
 	// e.g. for 60 FPS fixed timestep update logic, call:
@@ -21,7 +21,7 @@ ExampleMain::ExampleMain()
 }
 
 // Creates and initializes the renderers.
-void ExampleMain::CreateRenderers(const std::shared_ptr<DX::DeviceResources>& deviceResources)
+void TcGame::CreateRenderers(const std::shared_ptr<DX::DeviceResources>& deviceResources)
 {
 	// TODO: Replace this with your app's content initialization.
 	m_sceneRenderer = std::unique_ptr<Sample3DSceneRenderer>(new Sample3DSceneRenderer(deviceResources));
@@ -30,7 +30,7 @@ void ExampleMain::CreateRenderers(const std::shared_ptr<DX::DeviceResources>& de
 }
 
 // Updates the application state once per frame.
-void ExampleMain::Update()
+void TcGame::Update()
 {
 	// Update scene objects.
 	m_timer.Tick([&]()
@@ -42,7 +42,7 @@ void ExampleMain::Update()
 
 // Renders the current frame according to the current application state.
 // Returns true if the frame was rendered and is ready to be displayed.
-bool ExampleMain::Render()
+bool TcGame::Render()
 {
 	// Don't try to render anything before the first Update.
 	if (m_timer.GetFrameCount() == 0)
@@ -56,14 +56,14 @@ bool ExampleMain::Render()
 }
 
 // Updates application state when the window's size changes (e.g. device orientation change)
-void ExampleMain::OnWindowSizeChanged()
+void TcGame::OnWindowSizeChanged()
 {
 	// TODO: Replace this with the size-dependent initialization of your app's content.
 	m_sceneRenderer->CreateWindowSizeDependentResources();
 }
 
 // Notifies the app that it is being suspended.
-void ExampleMain::OnSuspending()
+void TcGame::OnSuspending()
 {
 	// TODO: Replace this with your app's suspending logic.
 
@@ -77,13 +77,13 @@ void ExampleMain::OnSuspending()
 }
 
 // Notifes the app that it is no longer suspended.
-void ExampleMain::OnResuming()
+void TcGame::OnResuming()
 {
 	// TODO: Replace this with your app's resuming logic.
 }
 
 // Notifies renderers that device resources need to be released.
-void ExampleMain::OnDeviceRemoved()
+void TcGame::OnDeviceRemoved()
 {
 	// TODO: Save any necessary application or renderer state and release the renderer
 	// and its resources which are no longer valid.

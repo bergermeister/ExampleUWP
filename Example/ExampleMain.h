@@ -3,11 +3,12 @@
 #include "Common\StepTimer.h"
 #include "Common\DeviceResources.h"
 #include "Content\Sample3DSceneRenderer.h"
+#include <Common\DeviceResources.h>
 
 // Renders Direct3D content on the screen.
 namespace Example
 {
-   class ExampleMain
+   class TcGame : public DX::IDeviceNotify
    {
    private:
       // TODO: Replace with your own content renderers.
@@ -17,7 +18,10 @@ namespace Example
       DX::StepTimer m_timer;
 
    public:
-      ExampleMain( const std::shared_ptr< DX::DeviceResources >& korDeviceResources );
+      TcGame( const std::shared_ptr< DX::DeviceResources >& korDeviceResources );
+
+      void MCreateWindowSizeDependentResources( void );
+      void MRun( void );
       void CreateRenderers(const std::shared_ptr<DX::DeviceResources>& deviceResources);
       void Update();
       bool Render();

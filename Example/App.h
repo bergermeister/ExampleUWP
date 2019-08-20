@@ -19,35 +19,47 @@ namespace Example
    {
    private: // Private Attributes
       // Private accessor for m_deviceResources, protects against device removed errors.
-      std::shared_ptr<DX::DeviceResources> voDeviceResources;  ///< DirectX device resources
-      std::unique_ptr< ExampleMain >       voMain;             ///< Main game object
+      std::shared_ptr<DX::DeviceResources> vopDeviceResources;  ///< DirectX device resources
+      std::unique_ptr< TcGame >       vopMain;             ///< Main game object
 
    public:
-      App( );
+      App( void );
 
       // IFrameworkView methods.
-      virtual void Initialize( Windows::ApplicationModel::Core::CoreApplicationView^ applicationView );
-      virtual void SetWindow( Windows::UI::Core::CoreWindow^ window );
-      virtual void Load( Platform::String^ entryPoint );
-      virtual void Run( );
-      virtual void Uninitialize( );
+      virtual void Initialize( Windows::ApplicationModel::Core::CoreApplicationView^ aopApplicationView );
+      virtual void SetWindow( Windows::UI::Core::CoreWindow^ aopWindow );
+      virtual void Load( Platform::String^ aopEntryPoint );
+      virtual void Run( void );
+      virtual void Uninitialize( void );
 
    protected:
       // Application lifecycle event handlers.
-      void OnActivated( Windows::ApplicationModel::Core::CoreApplicationView^ applicationView, 
-                        Windows::ApplicationModel::Activation::IActivatedEventArgs^ args );
-      void OnSuspending( Platform::Object^ sender, Windows::ApplicationModel::SuspendingEventArgs^ args );
-      void OnResuming(Platform::Object^ sender, Platform::Object^ args);
+      void mOnActivated( Windows::ApplicationModel::Core::CoreApplicationView^ aopApplicationView, 
+                         Windows::ApplicationModel::Activation::IActivatedEventArgs^ aopArgs );
+      void mOnSuspending( Platform::Object^ aopSender,
+                          Windows::ApplicationModel::SuspendingEventArgs^ aopArgs );
+      void mOnResuming( Platform::Object^ aopSender, 
+                        Platform::Object^ aopArgs );
 
       // Window event handlers.
-      void OnWindowSizeChanged( Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::WindowSizeChangedEventArgs^ args );
-      void OnVisibilityChanged( Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::VisibilityChangedEventArgs^ args );
-      void OnWindowClosed( Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::CoreWindowEventArgs^ args );
+      void mOnWindowSizeChanged( Windows::UI::Core::CoreWindow^ aopSender, 
+                                 Windows::UI::Core::WindowSizeChangedEventArgs^ aopArgs );
+      void mOnVisibilityChanged( Windows::UI::Core::CoreWindow^ aopSender, 
+                                 Windows::UI::Core::VisibilityChangedEventArgs^ aopArgs );
+      void mOnWindowClosed( Windows::UI::Core::CoreWindow^ aopSender, 
+                            Windows::UI::Core::CoreWindowEventArgs^ aopArgs );
+      void mOnWindowActivationChanged( Windows::UI::Core::CoreWindow^ aopSender,
+                                       Windows::UI::Core::WindowActivatedEventArgs^ aopArgs );
 
       // DisplayInformation event handlers.
-      void OnDpiChanged( Windows::Graphics::Display::DisplayInformation^ sender, Platform::Object^ args );
-      void OnOrientationChanged( Windows::Graphics::Display::DisplayInformation^ sender, Platform::Object^ args );
-      void OnDisplayContentsInvalidated( Windows::Graphics::Display::DisplayInformation^ sender, Platform::Object^ args );
+      void mOnDpiChanged( Windows::Graphics::Display::DisplayInformation^ aopSender, 
+                          Platform::Object^ aopArgs );
+      void mOnOrientationChanged( Windows::Graphics::Display::DisplayInformation^ aopSender, 
+                                  Platform::Object^ aopArgs );
+      void mOnDisplayContentsInvalidated( Windows::Graphics::Display::DisplayInformation^ aopSender,
+                                          Platform::Object^ aopArgs );
+      void mOnStereoEnabledChanged( Windows::Graphics::Display::DisplayInformation^ aopSender,
+                                    Platform::Object^ aopArgs );
    };
 }
 

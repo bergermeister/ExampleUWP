@@ -62,5 +62,51 @@
     <Image Include="Assets\Wide310x150Logo.scale-200.png">
       <Filter>Assets</Filter>
     </Image>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{c631929c-f0fa-4475-974f-ef50c5178202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Objects">
+      <UniqueIdentifier>{485e572e-af55-44d6-994b-c45b1e6bceb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Rendering">
+      <UniqueIdentifier>{b767ecc6-526a-4ab6-b5f6-3537af7656be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Resources\Objects\Mesh.cpp">
+      <Filter>Resources\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Objects\Object.cpp">
+      <Filter>Resources\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Rendering\Material.cpp">
+      <Filter>Resources\Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="UIControl.h" />
+    <ClInclude Include="Control.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Resources\Objects\Mesh.h">
+      <Filter>Resources\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Objects\Object.h">
+      <Filter>Resources\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Rendering\ConstantBuffers.h">
+      <Filter>Resources\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Rendering\Material.h">
+      <Filter>Resources\Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
   </ItemGroup>
 </Project>

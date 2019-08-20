@@ -245,17 +245,24 @@
     <ClInclude Include="App.h" />
     <ClInclude Include="Common\d3dx12.h" />
     <ClInclude Include="Common\DeviceResources.h" />
-    <ClInclude Include="ExampleMain.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="Control.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Common\DirectXHelper.h" />
     <ClInclude Include="Common\StepTimer.h" />
     <ClInclude Include="Content\Sample3DSceneRenderer.h" />
     <ClInclude Include="Content\ShaderStructures.h" />
+    <ClInclude Include="Resources\Objects\Mesh.h" />
+    <ClInclude Include="Resources\Objects\Object.h" />
+    <ClInclude Include="Resources\Rendering\ConstantBuffers.h" />
+    <ClInclude Include="Resources\Rendering\Material.h" />
+    <ClInclude Include="UIControl.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="Common\DeviceResources.cpp" />
-    <ClCompile Include="ExampleMain.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Content\Sample3DSceneRenderer.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -267,6 +274,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Resources\Objects\Mesh.cpp" />
+    <ClCompile Include="Resources\Objects\Object.cpp" />
+    <ClCompile Include="Resources\Rendering\Material.cpp" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

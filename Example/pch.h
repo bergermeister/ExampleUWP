@@ -2,14 +2,26 @@
 
 #include <wrl.h>
 #include <wrl/client.h>
-#include <dxgi1_4.h>
-#include <d3d12.h>
-#include "Common\d3dx12.h"
-#include <pix.h>
-#include <DirectXColors.h>
+#include <d3d11_3.h>
+#include <d2d1_3.h>
+#include <d2d1effects_2.h>
+#include <dwrite_3.h>
+#include <wincodec.h>
 #include <DirectXMath.h>
-#include <memory>
+
+#include <xaudio2.h>
+#include <xaudio2fx.h>
+
+#include <mmreg.h>
+#include <mfidl.h>
+#include <mfapi.h>
+#include <mfreadwrite.h>
+
+#include <stdio.h>
 #include <vector>
+#include <memory>
+
+#include <ppltasks.h>
 #include <agile.h>
 #include <concrt.h>
 
