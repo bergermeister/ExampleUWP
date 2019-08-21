@@ -71,6 +71,9 @@
     <Filter Include="Resources\Rendering">
       <UniqueIdentifier>{b767ecc6-526a-4ab6-b5f6-3537af7656be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\Audio">
+      <UniqueIdentifier>{f8aaa059-3359-425f-a4ee-c07a6f91c91e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
@@ -83,6 +86,15 @@
       <Filter>Resources\Objects</Filter>
     </ClCompile>
     <ClCompile Include="Resources\Rendering\Material.cpp">
+      <Filter>Resources\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Audio\SoundEffect.cpp">
+      <Filter>Resources\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Objects\Animation.cpp">
+      <Filter>Resources\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Objects\AnimationLinePosition.cpp">
       <Filter>Resources\Objects</Filter>
     </ClCompile>
   </ItemGroup>
@@ -103,6 +115,15 @@
       <Filter>Resources\Rendering</Filter>
     </ClInclude>
     <ClInclude Include="Resources\Rendering\Material.h">
+      <Filter>Resources\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Audio\SoundEffect.h">
+      <Filter>Resources\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Objects\Animation.h">
+      <Filter>Resources\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Objects\AnimationLinePosition.h">
       <Filter>Resources\Objects</Filter>
     </ClInclude>
   </ItemGroup>

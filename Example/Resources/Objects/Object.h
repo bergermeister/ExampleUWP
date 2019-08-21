@@ -7,6 +7,9 @@
  * @par
  */
 #pragma once
+
+#include <Resources/Rendering/Material.h>
+
 namespace Example
 {
    namespace NResources
@@ -28,8 +31,8 @@ namespace Example
             DirectX::XMFLOAT3   m_velocity;
             DirectX::XMFLOAT4X4 m_modelMatrix;
 
-            Material^ m_normalMaterial;
-            Material^ m_hitMaterial;
+            TcMaterial^ m_normalMaterial;
+            TcMaterial^ m_hitMaterial;
 
             DirectX::XMFLOAT3   m_defaultXAxis;
             DirectX::XMFLOAT3   m_defaultYAxis;

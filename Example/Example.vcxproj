@@ -252,6 +252,9 @@
     <ClInclude Include="Common\StepTimer.h" />
     <ClInclude Include="Content\Sample3DSceneRenderer.h" />
     <ClInclude Include="Content\ShaderStructures.h" />
+    <ClInclude Include="Resources\Audio\SoundEffect.h" />
+    <ClInclude Include="Resources\Objects\Animation.h" />
+    <ClInclude Include="Resources\Objects\AnimationLinePosition.h" />
     <ClInclude Include="Resources\Objects\Mesh.h" />
     <ClInclude Include="Resources\Objects\Object.h" />
     <ClInclude Include="Resources\Rendering\ConstantBuffers.h" />
@@ -274,6 +277,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Resources\Audio\SoundEffect.cpp" />
+    <ClCompile Include="Resources\Objects\Animation.cpp" />
+    <ClCompile Include="Resources\Objects\AnimationLinePosition.cpp" />
     <ClCompile Include="Resources\Objects\Mesh.cpp" />
     <ClCompile Include="Resources\Objects\Object.cpp" />
     <ClCompile Include="Resources\Rendering\Material.cpp" />

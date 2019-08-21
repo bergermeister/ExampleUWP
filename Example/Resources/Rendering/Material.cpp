@@ -13,6 +13,14 @@
 
 using namespace Example::NResources::NRendering;
 
+/**
+ * @brief
+ *
+ *
+ * @details
+ * @par
+ *
+ */
 TcMaterial::TcMaterial( DirectX::XMFLOAT4 aoMeshColor, DirectX::XMFLOAT4 aoDiffuseColor, DirectX::XMFLOAT4 aoSpecularColor,
                        float afSpecularExponent, _In_ ID3D11ShaderResourceView& aorTextureResourceView,
                        _In_ ID3D11VertexShader& aorVertexShader, _In_ ID3D11PixelShader& aorPixelShader )
@@ -26,6 +34,14 @@ TcMaterial::TcMaterial( DirectX::XMFLOAT4 aoMeshColor, DirectX::XMFLOAT4 aoDiffu
    this->vopTextureRV       = &aorTextureResourceView;
 }
 
+/**
+ * @brief
+ * 
+ *
+ * @details
+ * @par
+ *
+ */
 void TcMaterial::MRenderSetup( _In_ ID3D11DeviceContext& aorContext,
                                _Inout_ TsConstantBufferChangesEveryPrim& aorConstantBuffer )
 {
@@ -39,6 +55,14 @@ void TcMaterial::MRenderSetup( _In_ ID3D11DeviceContext& aorContext,
    aorContext.PSSetShader( this->vopPixelShader.Get( ), nullptr, 0 );
 }
 
+/**
+ * @brief
+ *
+ *
+ * @details
+ * @par
+ *
+ */
 void TcMaterial::MSetTexture( _In_ ID3D11ShaderResourceView& aorTextureResourceView )
 {
    this->vopTextureRV = &aorTextureResourceView;
