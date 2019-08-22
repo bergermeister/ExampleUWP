@@ -15,6 +15,14 @@
 using namespace Example::NResources::NObjects;
 using namespace DirectX;
 
+/**
+ * @brief
+ *
+ *
+ * @details
+ * @par
+ *
+ */
 TcAnimationLinePosition::TcAnimationLinePosition( _In_ DirectX::XMFLOAT3 aoStartPosition,
                                                   _In_ DirectX::XMFLOAT3 aoEndPosition,
                                                   _In_ float             afDuration,
@@ -28,7 +36,14 @@ TcAnimationLinePosition::TcAnimationLinePosition( _In_ DirectX::XMFLOAT3 aoStart
                                                           XMLoadFloat3( &aoStartPosition ) ) );
 }
 
-
+/**
+ * @brief
+ *
+ *
+ * @details
+ * @par
+ *
+ */
 XMFLOAT3 TcAnimationLinePosition::MEvaluate( _In_ float afT )
 {
    XMFLOAT3 koPosition;

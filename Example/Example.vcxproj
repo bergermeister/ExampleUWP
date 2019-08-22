@@ -254,7 +254,10 @@
     <ClInclude Include="Content\ShaderStructures.h" />
     <ClInclude Include="Resources\Audio\SoundEffect.h" />
     <ClInclude Include="Resources\Objects\Animation.h" />
+    <ClInclude Include="Resources\Objects\AnimationCirclePosition.h" />
+    <ClInclude Include="Resources\Objects\AnimationLineListPosition.h" />
     <ClInclude Include="Resources\Objects\AnimationLinePosition.h" />
+    <ClInclude Include="Resources\Objects\LineSegment.h" />
     <ClInclude Include="Resources\Objects\Mesh.h" />
     <ClInclude Include="Resources\Objects\Object.h" />
     <ClInclude Include="Resources\Rendering\ConstantBuffers.h" />
@@ -279,6 +282,8 @@
     </ClCompile>
     <ClCompile Include="Resources\Audio\SoundEffect.cpp" />
     <ClCompile Include="Resources\Objects\Animation.cpp" />
+    <ClCompile Include="Resources\Objects\AnimationCirclePosition.cpp" />
+    <ClCompile Include="Resources\Objects\AnimationLineListPosition.cpp" />
     <ClCompile Include="Resources\Objects\AnimationLinePosition.cpp" />
     <ClCompile Include="Resources\Objects\Mesh.cpp" />
     <ClCompile Include="Resources\Objects\Object.cpp" />

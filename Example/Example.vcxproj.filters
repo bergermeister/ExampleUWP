@@ -97,6 +97,12 @@
     <ClCompile Include="Resources\Objects\AnimationLinePosition.cpp">
       <Filter>Resources\Objects</Filter>
     </ClCompile>
+    <ClCompile Include="Resources\Objects\AnimationLineListPosition.cpp">
+      <Filter>Resources\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Objects\AnimationCirclePosition.cpp">
+      <Filter>Resources\Objects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
@@ -124,6 +130,15 @@
       <Filter>Resources\Objects</Filter>
     </ClInclude>
     <ClInclude Include="Resources\Objects\AnimationLinePosition.h">
+      <Filter>Resources\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Objects\AnimationLineListPosition.h">
+      <Filter>Resources\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Objects\LineSegment.h">
+      <Filter>Resources\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Objects\AnimationCirclePosition.h">
       <Filter>Resources\Objects</Filter>
     </ClInclude>
   </ItemGroup>
