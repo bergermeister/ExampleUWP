@@ -12,7 +12,7 @@
 #include <Resources/Animation/LinePosition.h>
 #include <Common/DirectXHelper.h>
 
-using namespace Example::NResources::NAnimation;
+using namespace Example::NResources::NAnimations;
 using namespace DirectX;
 
 /**

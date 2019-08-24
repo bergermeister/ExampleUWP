@@ -13,7 +13,7 @@ namespace Example
 {
    namespace NResources
    {
-      namespace NAnimation
+      namespace NAnimations
       {
          ref class TcCirclePosition : public TcAnimation
          {

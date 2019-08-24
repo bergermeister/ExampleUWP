@@ -15,7 +15,7 @@ namespace Example
 {
    namespace NResources
    {
-      namespace NAnimation
+      namespace NAnimations
       {
          ref class TcLinePosition : public TcAnimation
          {

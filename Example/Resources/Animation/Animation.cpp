@@ -10,7 +10,7 @@
 #include <pch.h>
 #include <Resources/Animation/Animation.h>
 
-using namespace Example::NResources::NAnimation;
+using namespace Example::NResources::NAnimations;
 
 /**
  * @brief
