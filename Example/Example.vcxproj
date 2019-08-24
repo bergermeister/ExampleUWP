@@ -253,9 +253,9 @@
     <ClInclude Include="Content\Sample3DSceneRenderer.h" />
     <ClInclude Include="Content\ShaderStructures.h" />
     <ClInclude Include="Resources\Animation\Animation.h" />
-    <ClInclude Include="Resources\Animation\AnimationCirclePosition.h" />
-    <ClInclude Include="Resources\Animation\AnimationLineListPosition.h" />
-    <ClInclude Include="Resources\Animation\AnimationLinePosition.h" />
+    <ClInclude Include="Resources\Animation\CirclePosition.h" />
+    <ClInclude Include="Resources\Animation\LineListPosition.h" />
+    <ClInclude Include="Resources\Animation\LinePosition.h" />
     <ClInclude Include="Resources\Animation\LineSegment.h" />
     <ClInclude Include="Resources\Audio\SoundEffect.h" />
     <ClInclude Include="Resources\Objects\Mesh.h" />
@@ -281,9 +281,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Resources\Animation\Animation.cpp" />
-    <ClCompile Include="Resources\Animation\AnimationCirclePosition.cpp" />
-    <ClCompile Include="Resources\Animation\AnimationLineListPosition.cpp" />
-    <ClCompile Include="Resources\Animation\AnimationLinePosition.cpp" />
+    <ClCompile Include="Resources\Animation\CirclePosition.cpp" />
+    <ClCompile Include="Resources\Animation\LineListPosition.cpp" />
+    <ClCompile Include="Resources\Animation\LinePosition.cpp" />
     <ClCompile Include="Resources\Audio\SoundEffect.cpp" />
     <ClCompile Include="Resources\Objects\Mesh.cpp" />
     <ClCompile Include="Resources\Objects\Object.cpp" />

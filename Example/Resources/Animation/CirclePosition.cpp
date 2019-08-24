@@ -9,7 +9,7 @@
  */
 #include <pch.h>
 #include <Resources/Animation/Animation.h>
-#include <Resources/Animation/AnimationCirclePosition.h>
+#include <Resources/Animation/CirclePosition.h>
 #include <Common/DirectXHelper.h>
 
 using namespace Example::NResources::NAnimation;
@@ -23,12 +23,12 @@ using namespace DirectX;
  * @par
  *
  */
-TcAnimationCirclePosition::TcAnimationCirclePosition( _In_ DirectX::XMFLOAT3 aoCenter,
-                                                      _In_ DirectX::XMFLOAT3 aoStartPosition,
-                                                      _In_ DirectX::XMFLOAT3 aoPlaneNormal,
-                                                      _In_ float             afDuration,
-                                                      _In_ bool              abContinuous,
-                                                      _In_ bool              abClockwise )
+TcCirclePosition::TcCirclePosition( _In_ DirectX::XMFLOAT3 aoCenter,
+                                    _In_ DirectX::XMFLOAT3 aoStartPosition,
+                                    _In_ DirectX::XMFLOAT3 aoPlaneNormal,
+                                    _In_ float             afDuration,
+                                    _In_ bool              abContinuous,
+                                    _In_ bool              abClockwise )
 {
    XMVECTOR koCoordX;
    XMVECTOR koCoordZ;
@@ -108,7 +108,7 @@ TcAnimationCirclePosition::TcAnimationCirclePosition( _In_ DirectX::XMFLOAT3 aoC
  * @par
  *
  */
-DirectX::XMFLOAT3 TcAnimationCirclePosition::MEvaluate( _In_ float afT )
+DirectX::XMFLOAT3 TcCirclePosition::MEvaluate( _In_ float afT )
 {
    XMFLOAT3 koPosition;
    float    kfStartTime;
@@ -133,8 +133,8 @@ DirectX::XMFLOAT3 TcAnimationCirclePosition::MEvaluate( _In_ float afT )
 
       kfU = ( ( afT - this->vfStartTime ) / this->vfDuration ) * XM_2PI;
 
-      koPosition.x = this->vfRadius * cos( kfU );
-      koPosition.y = this->vfRadius * sin( kfU );
+      koPosition.x = this->vfRadius * static_cast< float >( cos( kfU ) );
+      koPosition.y = this->vfRadius * static_cast< float >( sin( kfU ) );
       koPosition.z = 0.0f;
 
       XMStoreFloat3( &koPosition, XMVector3TransformCoord( XMLoadFloat3( &koPosition ), 

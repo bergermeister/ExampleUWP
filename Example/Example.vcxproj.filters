@@ -97,13 +97,13 @@
     <ClCompile Include="Resources\Animation\Animation.cpp">
       <Filter>Resources\Animation</Filter>
     </ClCompile>
-    <ClCompile Include="Resources\Animation\AnimationCirclePosition.cpp">
+    <ClCompile Include="Resources\Animation\CirclePosition.cpp">
       <Filter>Resources\Animation</Filter>
     </ClCompile>
-    <ClCompile Include="Resources\Animation\AnimationLineListPosition.cpp">
+    <ClCompile Include="Resources\Animation\LineListPosition.cpp">
       <Filter>Resources\Animation</Filter>
     </ClCompile>
-    <ClCompile Include="Resources\Animation\AnimationLinePosition.cpp">
+    <ClCompile Include="Resources\Animation\LinePosition.cpp">
       <Filter>Resources\Animation</Filter>
     </ClCompile>
   </ItemGroup>
@@ -132,16 +132,16 @@
     <ClInclude Include="Resources\Animation\Animation.h">
       <Filter>Resources\Animation</Filter>
     </ClInclude>
-    <ClInclude Include="Resources\Animation\AnimationCirclePosition.h">
-      <Filter>Resources\Animation</Filter>
-    </ClInclude>
-    <ClInclude Include="Resources\Animation\AnimationLineListPosition.h">
-      <Filter>Resources\Animation</Filter>
-    </ClInclude>
-    <ClInclude Include="Resources\Animation\AnimationLinePosition.h">
-      <Filter>Resources\Animation</Filter>
-    </ClInclude>
     <ClInclude Include="Resources\Animation\LineSegment.h">
+      <Filter>Resources\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Animation\CirclePosition.h">
+      <Filter>Resources\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Animation\LineListPosition.h">
+      <Filter>Resources\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Animation\LinePosition.h">
       <Filter>Resources\Animation</Filter>
     </ClInclude>
   </ItemGroup>

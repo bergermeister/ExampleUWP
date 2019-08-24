@@ -9,7 +9,7 @@
  */
 #include <pch.h>
 #include <Resources/Animation/Animation.h>
-#include <Resources/Animation/AnimationLinePosition.h>
+#include <Resources/Animation/LinePosition.h>
 #include <Common/DirectXHelper.h>
 
 using namespace Example::NResources::NAnimation;
@@ -23,10 +23,10 @@ using namespace DirectX;
  * @par
  *
  */
-TcAnimationLinePosition::TcAnimationLinePosition( _In_ DirectX::XMFLOAT3 aoStartPosition,
-                                                  _In_ DirectX::XMFLOAT3 aoEndPosition,
-                                                  _In_ float             afDuration,
-                                                  _In_ bool              abContinuous )
+TcLinePosition::TcLinePosition( _In_ DirectX::XMFLOAT3 aoStartPosition,
+                                _In_ DirectX::XMFLOAT3 aoEndPosition,
+                                _In_ float             afDuration,
+                                _In_ bool              abContinuous )
 {
    this->voStartPosition = aoStartPosition;
    this->voEndPosition   = aoEndPosition;
@@ -44,7 +44,7 @@ TcAnimationLinePosition::TcAnimationLinePosition( _In_ DirectX::XMFLOAT3 aoStart
  * @par
  *
  */
-XMFLOAT3 TcAnimationLinePosition::MEvaluate( _In_ float afT )
+XMFLOAT3 TcLinePosition::MEvaluate( _In_ float afT )
 {
    XMFLOAT3 koPosition;
    float    kfStartTime = this->vfStartTime;

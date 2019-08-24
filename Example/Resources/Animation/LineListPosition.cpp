@@ -9,7 +9,7 @@
  */
 #include <pch.h>
 #include <Resources/Animation/Animation.h>
-#include <Resources/Animation/AnimationLineListPosition.h>
+#include <Resources/Animation/LineListPosition.h>
 #include <Common/DirectXHelper.h>
 
 using namespace Example::NResources::NAnimation;
@@ -23,10 +23,10 @@ using namespace DirectX;
  * @par
  *
  */
-TcAnimationLineListPosition::TcAnimationLineListPosition( _In_ unsigned int                        auiCount,
-                                                          _In_reads_( auiCount ) DirectX::XMFLOAT3 aoPosition[ ],
-                                                          _In_ float                               afDuration,
-                                                          _In_ bool                                abContinuous )
+TcLineListPosition::TcLineListPosition( _In_ unsigned int                        auiCount,
+                                        _In_reads_( auiCount ) DirectX::XMFLOAT3 aoPosition[ ],
+                                        _In_ float                               afDuration,
+                                        _In_ bool                                abContinuous )
 {
    std::vector< TsLineSegment > koSegment( auiCount );
    unsigned int                 kuiI;
@@ -66,7 +66,7 @@ TcAnimationLineListPosition::TcAnimationLineListPosition( _In_ unsigned int     
  * @par
  *
  */
-XMFLOAT3 TcAnimationLineListPosition::MEvaluate( _In_ float afT )
+XMFLOAT3 TcLineListPosition::MEvaluate( _In_ float afT )
 {
    XMFLOAT3     koPosition;
    float        kfU;
