@@ -9,14 +9,14 @@
  */
 #pragma once
 
-#include <Resources/Objects/Animation.h>
-#include <Resources/Objects/LineSegment.h>
+#include <Resources/Animation/Animation.h>
+#include <Resources/Animation/LineSegment.h>
 
 namespace Example
 {
    namespace NResources
    {
-      namespace NObjects
+      namespace NAnimation
       {
          ref class TcAnimationLineListPosition : public TcAnimation
          {

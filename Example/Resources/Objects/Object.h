@@ -8,6 +8,9 @@
  */
 #pragma once
 
+#include <Resources/Objects/Mesh.h>
+#include <Resources/Audio/SoundEffect.h>
+#include <Resources/Animation/Animation.h>
 #include <Resources/Rendering/Material.h>
 
 namespace Example
@@ -31,8 +34,8 @@ namespace Example
             DirectX::XMFLOAT3   m_velocity;
             DirectX::XMFLOAT4X4 m_modelMatrix;
 
-            TcMaterial^ m_normalMaterial;
-            TcMaterial^ m_hitMaterial;
+            NRendering::TcMaterial^ m_normalMaterial;
+            NRendering::TcMaterial^ m_hitMaterial;
 
             DirectX::XMFLOAT3   m_defaultXAxis;
             DirectX::XMFLOAT3   m_defaultYAxis;

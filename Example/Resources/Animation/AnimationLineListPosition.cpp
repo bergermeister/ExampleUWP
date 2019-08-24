@@ -8,11 +8,11 @@
  *
  */
 #include <pch.h>
-#include <Resources/Objects/Animation.h>
-#include <Resources/Objects/AnimationLineListPosition.h>
+#include <Resources/Animation/Animation.h>
+#include <Resources/Animation/AnimationLineListPosition.h>
 #include <Common/DirectXHelper.h>
 
-using namespace Example::NResources::NObjects;
+using namespace Example::NResources::NAnimation;
 using namespace DirectX;
 
 /**

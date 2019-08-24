@@ -9,13 +9,13 @@
  */
 #pragma once
 
-#include <Resources/Objects/Animation.h>
+#include <Resources/Animation/Animation.h>
 
 namespace Example
 {
    namespace NResources
    {
-      namespace NObjects
+      namespace NAnimation
       {
          ref class TcAnimationLinePosition : public TcAnimation
          {

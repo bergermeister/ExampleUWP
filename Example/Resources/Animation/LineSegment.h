@@ -13,7 +13,7 @@ namespace Example
 {
    namespace NResources
    {
-      namespace NObjects
+      namespace NAnimation
       {
          struct TsLineSegment
          {

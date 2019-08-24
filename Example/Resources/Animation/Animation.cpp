@@ -8,9 +8,9 @@
  *
  */
 #include <pch.h>
-#include <Resources/Objects/Animation.h>
+#include <Resources/Animation/Animation.h>
 
-using namespace Example::NResources::NObjects;
+using namespace Example::NResources::NAnimation;
 
 /**
  * @brief

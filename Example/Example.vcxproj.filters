@@ -74,6 +74,9 @@
     <Filter Include="Resources\Audio">
       <UniqueIdentifier>{f8aaa059-3359-425f-a4ee-c07a6f91c91e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\Animation">
+      <UniqueIdentifier>{ac1a1a18-aa3c-4920-88e4-fc543a499d48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
@@ -91,17 +94,17 @@
     <ClCompile Include="Resources\Audio\SoundEffect.cpp">
       <Filter>Resources\Audio</Filter>
     </ClCompile>
-    <ClCompile Include="Resources\Objects\Animation.cpp">
-      <Filter>Resources\Objects</Filter>
+    <ClCompile Include="Resources\Animation\Animation.cpp">
+      <Filter>Resources\Animation</Filter>
     </ClCompile>
-    <ClCompile Include="Resources\Objects\AnimationLinePosition.cpp">
-      <Filter>Resources\Objects</Filter>
+    <ClCompile Include="Resources\Animation\AnimationCirclePosition.cpp">
+      <Filter>Resources\Animation</Filter>
     </ClCompile>
-    <ClCompile Include="Resources\Objects\AnimationLineListPosition.cpp">
-      <Filter>Resources\Objects</Filter>
+    <ClCompile Include="Resources\Animation\AnimationLineListPosition.cpp">
+      <Filter>Resources\Animation</Filter>
     </ClCompile>
-    <ClCompile Include="Resources\Objects\AnimationCirclePosition.cpp">
-      <Filter>Resources\Objects</Filter>
+    <ClCompile Include="Resources\Animation\AnimationLinePosition.cpp">
+      <Filter>Resources\Animation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -126,20 +129,20 @@
     <ClInclude Include="Resources\Audio\SoundEffect.h">
       <Filter>Resources\Audio</Filter>
     </ClInclude>
-    <ClInclude Include="Resources\Objects\Animation.h">
-      <Filter>Resources\Objects</Filter>
+    <ClInclude Include="Resources\Animation\Animation.h">
+      <Filter>Resources\Animation</Filter>
     </ClInclude>
-    <ClInclude Include="Resources\Objects\AnimationLinePosition.h">
-      <Filter>Resources\Objects</Filter>
+    <ClInclude Include="Resources\Animation\AnimationCirclePosition.h">
+      <Filter>Resources\Animation</Filter>
     </ClInclude>
-    <ClInclude Include="Resources\Objects\AnimationLineListPosition.h">
-      <Filter>Resources\Objects</Filter>
+    <ClInclude Include="Resources\Animation\AnimationLineListPosition.h">
+      <Filter>Resources\Animation</Filter>
     </ClInclude>
-    <ClInclude Include="Resources\Objects\LineSegment.h">
-      <Filter>Resources\Objects</Filter>
+    <ClInclude Include="Resources\Animation\AnimationLinePosition.h">
+      <Filter>Resources\Animation</Filter>
     </ClInclude>
-    <ClInclude Include="Resources\Objects\AnimationCirclePosition.h">
-      <Filter>Resources\Objects</Filter>
+    <ClInclude Include="Resources\Animation\LineSegment.h">
+      <Filter>Resources\Animation</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
