@@ -9,8 +9,6 @@
  */
 #pragma once
 
-#include <Resources/Rendering/ConstantBuffers.h>
-
 namespace Example
 {
    namespace NResources

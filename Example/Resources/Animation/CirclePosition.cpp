@@ -8,9 +8,6 @@
  *
  */
 #include <pch.h>
-#include <Resources/Animation/Animation.h>
-#include <Resources/Animation/CirclePosition.h>
-#include <Common/DirectXHelper.h>
 
 using namespace Example::NResources::NAnimations;
 using namespace DirectX;

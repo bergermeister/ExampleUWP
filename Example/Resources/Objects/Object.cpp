@@ -7,14 +7,6 @@
  *
  */
 #include <pch.h>
-#include <Resources/Objects/Mesh.h>
-#include <Resources/Audio/SoundEffect.h>
-#include <Resources/Animation/Animation.h>
-#include <Resources/Rendering/Material.h>
-#include <Resources/Objects/Object.h>
-#include <Resources/Rendering/ConstantBuffers.h>
-#include <Constants.h>
-
 
 using namespace DirectX;
 using namespace Example::NResources::NObjects;
@@ -57,21 +49,16 @@ bool TcObject::MIsTouching( DirectX::XMFLOAT3        aoPoint,
 
 //----------------------------------------------------------------------
 
-void TcObject::Render(
-   _In_ ID3D11DeviceContext* context,
-   _In_ ID3D11Buffer* primitiveConstantBuffer
-)
+void TcObject::Render( _In_ ID3D11DeviceContext& aorContext, _In_ ID3D11Buffer& aorPrimitiveConstantBuffer )
 {
    if( !m_active || ( m_mesh == nullptr ) || ( m_normalMaterial == nullptr ) )
    {
       return;
    }
 
-   ConstantBufferChangesEveryPrim constantBuffer;
+   ConstantBufferChangesEveryPrim koConstantBuffer;
 
-   XMStoreFloat4x4(
-      &constantBuffer.worldMatrix,
-      XMMatrixTranspose( ModelMatrix( ) )
+   XMStoreFloat4x4( &koConstantBuffer.worldMatrix, XMMatrixTranspose( ModelMatrix( ) )
    );
 
    if( m_hit && m_hitMaterial != nullptr )

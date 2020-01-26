@@ -8,8 +8,6 @@
  *
  */
 #include <pch.h>
-#include <Resources/Rendering/Material.h>
-#include <Constants.h>
 
 using namespace Example::NResources::NRendering;
 

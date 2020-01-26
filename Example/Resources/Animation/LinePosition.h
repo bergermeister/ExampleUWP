@@ -9,8 +9,6 @@
  */
 #pragma once
 
-#include <Resources/Animation/Animation.h>
-
 namespace Example
 {
    namespace NResources

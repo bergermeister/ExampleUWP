@@ -8,9 +8,6 @@
  *
  */
 #include <pch.h>
-#include <Resources/Objects/Mesh.h>
-#include <Resources/Rendering/ConstantBuffers.h>
-#include <Common/DirectXHelper.h>
 
 //using namespace Microsoft::WRL;
 //using namespace DirectX;

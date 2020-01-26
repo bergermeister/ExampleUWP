@@ -8,11 +8,6 @@
  */
 #pragma once
 
-#include <Resources/Objects/Mesh.h>
-#include <Resources/Audio/SoundEffect.h>
-#include <Resources/Animation/Animation.h>
-#include <Resources/Rendering/Material.h>
-
 namespace Example
 {
    namespace NResources

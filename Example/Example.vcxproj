@@ -233,15 +233,6 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Image Include="Assets\LockScreenLogo.scale-200.png" />
-    <Image Include="Assets\SplashScreen.scale-200.png" />
-    <Image Include="Assets\Square150x150Logo.scale-200.png" />
-    <Image Include="Assets\Square44x44Logo.scale-200.png" />
-    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Image Include="Assets\StoreLogo.png" />
-    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="Common\d3dx12.h" />
     <ClInclude Include="Common\DeviceResources.h" />
@@ -257,6 +248,8 @@
     <ClInclude Include="Resources\Animation\LineListPosition.h" />
     <ClInclude Include="Resources\Animation\LinePosition.h" />
     <ClInclude Include="Resources\Animation\LineSegment.h" />
+    <ClInclude Include="Resources\Audio\Audio.h" />
+    <ClInclude Include="Resources\Audio\MediaReader.h" />
     <ClInclude Include="Resources\Audio\SoundEffect.h" />
     <ClInclude Include="Resources\Objects\Mesh.h" />
     <ClInclude Include="Resources\Objects\Object.h" />
@@ -284,6 +277,8 @@
     <ClCompile Include="Resources\Animation\CirclePosition.cpp" />
     <ClCompile Include="Resources\Animation\LineListPosition.cpp" />
     <ClCompile Include="Resources\Animation\LinePosition.cpp" />
+    <ClCompile Include="Resources\Audio\Audio.cpp" />
+    <ClCompile Include="Resources\Audio\MediaReader.cpp" />
     <ClCompile Include="Resources\Audio\SoundEffect.cpp" />
     <ClCompile Include="Resources\Objects\Mesh.cpp" />
     <ClCompile Include="Resources\Objects\Object.cpp" />
@@ -301,6 +296,27 @@
     <FxCompile Include="Content\SampleVertexShader.hlsl">
       <ShaderType>Vertex</ShaderType>
     </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\cellceiling.dds" />
+    <Image Include="Assets\cellfloor.dds" />
+    <Image Include="Assets\cellwall.dds" />
+    <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\metal_texture.dds" />
+    <Image Include="Assets\seafloor.dds" />
+    <Image Include="Assets\SplashScreen.scale-200.png" />
+    <Image Include="Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\bounce.wav" />
+    <Media Include="Assets\hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\credits.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

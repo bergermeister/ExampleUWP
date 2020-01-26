@@ -41,27 +41,6 @@
     <FxCompile Include="Content\SampleVertexShader.hlsl">
       <Filter>Content</Filter>
     </FxCompile>
-    <Image Include="Assets\LockScreenLogo.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\SplashScreen.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\Square150x150Logo.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\Square44x44Logo.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\StoreLogo.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\Wide310x150Logo.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
     <Filter Include="Resources">
       <UniqueIdentifier>{c631929c-f0fa-4475-974f-ef50c5178202}</UniqueIdentifier>
     </Filter>
@@ -88,9 +67,6 @@
     <ClCompile Include="Resources\Objects\Object.cpp">
       <Filter>Resources\Objects</Filter>
     </ClCompile>
-    <ClCompile Include="Resources\Rendering\Material.cpp">
-      <Filter>Resources\Objects</Filter>
-    </ClCompile>
     <ClCompile Include="Resources\Audio\SoundEffect.cpp">
       <Filter>Resources\Audio</Filter>
     </ClCompile>
@@ -105,6 +81,15 @@
     </ClCompile>
     <ClCompile Include="Resources\Animation\LinePosition.cpp">
       <Filter>Resources\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Rendering\Material.cpp">
+      <Filter>Resources\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Audio\Audio.cpp">
+      <Filter>Resources\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Audio\MediaReader.cpp">
+      <Filter>Resources\Audio</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -122,9 +107,6 @@
     </ClInclude>
     <ClInclude Include="Resources\Rendering\ConstantBuffers.h">
       <Filter>Resources\Rendering</Filter>
-    </ClInclude>
-    <ClInclude Include="Resources\Rendering\Material.h">
-      <Filter>Resources\Objects</Filter>
     </ClInclude>
     <ClInclude Include="Resources\Audio\SoundEffect.h">
       <Filter>Resources\Audio</Filter>
@@ -144,8 +126,68 @@
     <ClInclude Include="Resources\Animation\LinePosition.h">
       <Filter>Resources\Animation</Filter>
     </ClInclude>
+    <ClInclude Include="Resources\Rendering\Material.h">
+      <Filter>Resources\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Audio\Audio.h">
+      <Filter>Resources\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Audio\MediaReader.h">
+      <Filter>Resources\Audio</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\metal_texture.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\seafloor.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\cellceiling.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\cellfloor.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\cellwall.dds">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\bounce.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="Assets\hit.wav">
+      <Filter>Assets</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\credits.txt">
+      <Filter>Assets</Filter>
+    </Text>
   </ItemGroup>
 </Project>

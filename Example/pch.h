@@ -28,3 +28,33 @@
 #if defined(_DEBUG)
 #include <dxgidebug.h>
 #endif
+
+// Common DirectX
+#include <Common/DirectXHelper.h>
+
+// Constants
+#include <Constants.h>
+
+// Rendering Resources
+#include <Resources/Rendering/Material.h>
+#include <Resources/Rendering/ConstantBuffers.h>
+#include <Resources/Rendering/Material.h>
+
+// Audio Resources
+#include <Resources/Audio/Audio.h>
+#include <Resources/Audio/SoundEffect.h>
+#include <Resources/Audio/MediaReader.h>
+
+// Object Resources
+#include <Resources/Objects/Mesh.h>
+#include <Resources/Objects/Object.h>
+
+// Animation Resources
+#include <Resources/Animation/Animation.h>
+#include <Resources/Animation/CirclePosition.h>
+#include <Resources/Animation/LineListPosition.h>
+#include <Resources/Animation/LinePosition.h>
+#include <Resources/Animation/LineSegment.h>
+
+
+

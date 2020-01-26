@@ -8,8 +8,6 @@
  *
  */
 #include <pch.h>
-#include <Resources/Audio/SoundEffect.h>
-#include <Common/DirectXHelper.h>
 
 using namespace Example::NResources::NAudio;
 
